@@ -1,0 +1,19 @@
+{
+  "name": "sesimi-snippets",
+  "displayName": "Sesimi Snippets",
+  "description": "Company snippets for Sesimi development",
+  "version": "1.0.0",
+  "publisher": "sesimi",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      { "language": "javascript", "path": "./snippets/typescript.json" },
+      { "language": "typescript", "path": "./snippets/typescript.json" },
+      { "language": "javascriptreact", "path": "./snippets/typescript.json" },
+      { "language": "typescriptreact", "path": "./snippets/typescript.json" }
+    ]
+  }
+}

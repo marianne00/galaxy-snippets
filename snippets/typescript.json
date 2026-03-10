@@ -1,0 +1,22 @@
+{
+  "Sesimi Page Context Hook": {
+    "prefix": "sesimiCtx",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "import { useContext } from 'react'",
+      "import { PageContext } from '../pages/${1:001}/data/context'",
+      "",
+      "export function ${2:index}() {",
+      "  const { $3 } = useContext(PageContext)",
+      "  const isDev = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.DEV === true",
+      "",
+      "  if (isDev) {",
+      "    // Development environment specific code here",
+      "  }",
+      "",
+      "  // return LIVE values here",
+      "}"
+    ],
+    "description": "Sesimi Page Context Hook with dev environment check"
+  }
+}
