@@ -12,8 +12,8 @@
     "snippets": [
       { "language": "javascript", "path": "./snippets/javascript.json" },
       { "language": "typescript", "path": "./snippets/typescript.json" },
-      { "language": "javascriptreact", "path": "./snippets/javascript.json" },
-      { "language": "typescriptreact", "path": "./snippets/typescript.json" }
+      { "language": "javascriptreact", "path": "./snippets/javascriptreact.json" },
+      { "language": "typescriptreact", "path": "./snippets/typescriptreact.json" }
     ]
   },
   "icon": "icon.jpeg",
