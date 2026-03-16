@@ -1,7 +1,7 @@
 {
-  "name": "sesimi-snippets",
-  "displayName": "Sesimi Snippets",
-  "description": "Company snippets for Sesimi development",
+  "name": "galaxy-snippets",
+  "displayName": "Galaxy Snippets",
+  "description": "Galaxy snippets for template development",
   "version": "1.0.0",
   "publisher": "sesimi",
   "engines": {
@@ -19,7 +19,7 @@
   "icon": "icon.jpeg",
   "repository": {
   "type": "git",
-  "url": "https://github.com/marianne00/sesimi-snippets"},
+  "url": "https://github.com/marianne00/galaxy-snippets"},
   "author": {
     "name": "Marianne",
     "email": "mdeasis@sesimi.com"
