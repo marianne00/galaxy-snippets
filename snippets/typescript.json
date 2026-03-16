@@ -1,6 +1,6 @@
 {
-  "Sesimi Page Context Hook": {
-    "prefix": "sesimiCtx",
+  "Galaxy Page Context Hook": {
+    "prefix": "glxContext",
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "body": [
       "import { useContext } from 'react'",
@@ -17,6 +17,40 @@
       "  // return LIVE values here",
       "}"
     ],
-    "description": "Sesimi Page Context Hook with dev environment check"
-  }
+    "description": "Galaxy Page Context Hook with dev environment check"
+  },
+  "Galaxy Get Active Preset": {
+		"prefix": "glxActivePreset",
+		"body": [
+			"export const getActivePreset = (aspectRatio: number): string | null => {",
+			"  for (const [key, fn] of Object.entries(sizes)) {",
+			"    if (fn(aspectRatio)) {",
+			"      // Extract dimensions from key like \"isLayout1080x1080\" -> \"1080x1080\"",
+			"      const match = key.match(/(\\d+)x(\\d+)/)",
+			"      return match ? `${match[1]}x${match[2]}` : null",
+			"    }",
+			"  }",
+			"  return null",
+			"}"
+		],
+		"description": "Function to determine the active preset based on aspect ratio"
+	},
+  "Galaxy Template Hook Boilerplate": {
+		"prefix": "glxHook",
+		"body": [
+			"import { useContext } from 'react'",
+			"import { PageContext } from '../pages/001/data/context'",
+			"",
+			"export function ${TM_FILENAME_BASE/-//g}() {",
+			"  const { } = useContext(PageContext)",
+			"  const isDev = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.DEV === true",
+			"",
+			"  if (isDev) {",
+			"    // Development environment specific code here",
+			"  }",
+			"",
+			" // return LIVE values here",
+			"}"
+		]
+	}
 }
